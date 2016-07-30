@@ -300,18 +300,7 @@ def query_text(query):
     markup.add(types.InlineKeyboardButton('{}'.format(name), url="https://telegram.me/{}".format(user)))
     thumb_url = 'http://www.hopsten.de/assets/images/iNFO_LOGO.jpg'
     info = types.InlineQueryResultArticle('1','Your Info ',types.InputTextMessageContent('*Username : @{}\nYour First Name : {}\nYour Last Name : {}\nYour ID :  {}*'.format(user,name,lname,uid), parse_mode="Markdown"),reply_markup=markup,thumb_url=thumb_url)
-    #pic = types.InlineQueryResultPhoto('2',
-                                       #'http://vip.opload.ir/vipdl/95/3/negative23/photo-2016-06-09-01-09-41.jpg',
-                                       #'http://vip.opload.ir/vipdl/95/3/negative23/photo-2016-06-09-01-09-41.jpg',
-                                       #input_message_content=types.InputTextMessageContent('@Taylor_Team')
-    #gif = types.InlineQueryResultGif('2',
-                                    # 'http://andrewtrimmer.com/wp-content/uploads/2014/09/Coming-Soon_Light-Bulbs_Cropped-Animation-Set_03c.gif',
-                                     #'http://andrewtrimmer.com/wp-content/uploads/2014/09/Coming-Soon_Light-Bulbs_Cropped-Animation-Set_03c.gif',
-                                     #gif_width=70,
-                                     #gif_height=40,
-                                     #title="Soon Update",
-                                    # input_message_content=types.InputTextMessageContent('New Update #Soon'))
-
+    
     tumsss = 'http://images.clipartpanda.com/contact-clipart-contact-phone-md.png'
     random_text = random.randint(1, 100)
     tmpp = 'http://static.nautil.us/3006_5f268dfb0fbef44de0f668a022707b86.jpg'
