@@ -15,11 +15,6 @@ import redis as r
 
 bot = telebot.TeleBot(config.token)
 
-f = "Bot Firstname: {}".format(bot.get_me().first_name)
-u = "\nBot username: {}".format(bot.get_me().username)
-i = "\nBot ID: {}".format(bot.get_me().id)
-c = "\n\nThank you for using this source :)"
-print(f + u + i + c)
 
 @bot.message_handler(commands=['start'])
 def welcome(m):
